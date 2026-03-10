@@ -11,7 +11,7 @@ namespace Modul3_103022400016
 
         static double celtoFah(double suhu) 
         {
-            return (suhu * 9 / 5) + 32;
+            return (suhu * 9 / 5) + 32 ;
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -30,7 +30,7 @@ namespace Modul3_103022400016
                 Console.WriteLine("pilih suhu kedua");
             }
 
-            if (suhuAwal.Equals("Celsius") && suhuAkhir.Equals("Fahrenheit"))
+            if (suhuAwal == "Celsius" && suhuAkhir == "Fahrenheit")
             {
                 textBox2.Text = celtoFah(double.Parse(nilaiAwalText)).ToString();
             }
